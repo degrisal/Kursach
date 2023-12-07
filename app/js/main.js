@@ -71,6 +71,8 @@ $(function(){
   })
   $('.crUsluga__btn').on('click',function(){
     $('.crUsluga__buttonPlace').toggleClass('crUsluga__buttonPlace-block');
+    $('.crUsluga-form').toggleClass('crUsluga-form-active');
+    $('.crUsluga__btn').toggleClass('dn');
 })
 })
 //Анимация появления блоков при скролле JS

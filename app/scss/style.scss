@@ -3,18 +3,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-.df{
-    display: flex;
-}
-.db{
-    display: block;
-}
-.dn{
-    display: none !important;
-}
-.dg{
-    display: grid;
-}
+
 //Бургер 
 .burger{
     display: none;
@@ -575,6 +564,18 @@
         height: 50px;
         margin: 5px 0px;
     }
+    &__btnChange{
+        background-color: yellow;
+        border-radius: 15px;   
+        margin-top: auto;
+        border: none;
+        margin-right: 10px;
+    }
+    &__imgChange{
+        width: 50px;
+        height: 50px;
+        margin: 5px 0px;
+    }
 }
 .services{
     margin-bottom: 190px;
@@ -747,7 +748,6 @@
         width: 100%;
         height: 80%;
         resize: none;
-        margin-bottom: 60px;
         border-radius: 35px;
         border: 1px solid #9DA5AF;
         background: #FFF;
@@ -767,6 +767,28 @@
     }
     &__box{
         width: 170px;
+    }
+    &__btn-accept{
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        display: block;
+        margin: 20px auto;
+    }
+    &__btn-acceptText{
+        padding: 19px 40px;
+        border: 1px solid #31fd35;
+        border-radius: 25px;
+        background-color: #31fd35;
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        transition: all .3s ease-in;
+        &:hover{
+            border: 1px solid #31fd35;
+            background-color: #ffffff;
+            color: #31fd35;
+        }
     }
 }
 .request{
@@ -1143,3 +1165,15 @@
 	background-color: #eee;
 }
 @import 'media';
+.df{
+    display: flex;
+}
+.db{
+    display: block;
+}
+.dn{
+    display: none !important;
+}
+.dg{
+    display: grid;
+}

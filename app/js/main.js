@@ -74,6 +74,21 @@ $(function(){
     $('.crUsluga-form').toggleClass('crUsluga-form-active');
     $('.crUsluga__btn').toggleClass('dn');
 })
+$('.crUsluga__buttonPlace').on('click',function(){
+  $('.crUsluga__buttonPlace-block').toggleClass('crUsluga__buttonPlace-block');
+  $('.crUsluga-form').toggleClass('crUsluga-form-active');
+  $('.crUsluga__btn').toggleClass('dn');
+})
+$('.crUsluga__btn-accept').on('click',function(){
+  $('.crUsluga__buttonPlace-block').toggleClass('crUsluga__buttonPlace-block');
+  $('.crUsluga-form').toggleClass('crUsluga-form-active');
+  $('.crUsluga__btn').toggleClass('dn');
+})
+$('.works__btnChange').on('click',function(){
+  $('.crUsluga__buttonPlace').addClass('crUsluga__buttonPlace-block');
+  $('.crUsluga-form').toggleClass('crUsluga-form-active');
+  $('.crUsluga__btn').toggleClass('dn');
+})
   $('.input-file input[type=file]').on('change', function(){
     let file = this.files[0];
     $(this).next().html(file.name);

@@ -299,21 +299,40 @@
                             <input class="crUsluga__input-name" type="text" placeholder="Type Your EMail">
                         </div>
                     </div>
-                    <div class="df">
-                        <div class="crUsluga__half" style="margin-right: 20px;background-color: red;">
-                        <!--ТУТ ЗАГРУЗКА ФОТКИ-->
-                        </div> 
-                        <div class="crUsluga__half" style="margin-right: 20px;background-color: red;">
-                            <!--ТУТ ЗАГРУЗКА ФОТКИ-->
-                        </div> 
-                        <div class="crUsluga__half" style="margin-right: 20px;background-color: red;">
-                            <!--ТУТ ЗАГРУЗКА ФОТКИ-->
-                        </div>     
-                        <div class="crUsluga__half crUsluga__half-decr">
+                    <div class="crUsluga__dg">
+                        <div class="crUsluga__half" style="margin: 0px 20px 0px 40px;">
                             <p class="crUsluga__name">
-                                EMail
+                                Your Photo
                             </p>
-                            <textarea class="request__textarea" placeholder="Type Your Message..."></textarea>
+                            <form method="post" enctype="multipart/form-data">
+                                <label class="input-file">
+                                       <input type="file" name="file">		
+                                       <span>Upload Your Photo</span>
+                                 </label>
+                            </form>
+                        </div> 
+                        <div class="crUsluga__half" style="margin: 0px 20px 0px 40px;">
+                            <p class="crUsluga__name">
+                                Data problem
+                            </p>
+                            <input type="date" id="date" name="date" style="width: 170px;"/>
+                        </div>   
+                        <div class="crUsluga__half" style="margin: 0px 20px 0px 40px;">
+                            <p class="crUsluga__name">
+                                Your Executor
+                            </p>
+                            <select class="crUsluga__box">
+                                    <option>Razuv</option>
+                                    <option>Danilka</option>
+                                    <option>Full</option>
+                                    <option selected>Executor</option>
+                            </select>
+                        </div> 
+                        <div class="crUsluga__half crUsluga__half-decr">
+                            <p class="crUsluga__textarea-name">
+                                Your Description
+                            </p>
+                            <textarea class="crUsluga__textarea" placeholder="Type Your Description..."></textarea>
                         </div>
                     </div>
                 </div>

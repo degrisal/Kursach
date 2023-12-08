@@ -74,6 +74,10 @@ $(function(){
     $('.crUsluga-form').toggleClass('crUsluga-form-active');
     $('.crUsluga__btn').toggleClass('dn');
 })
+  $('.input-file input[type=file]').on('change', function(){
+    let file = this.files[0];
+    $(this).next().html(file.name);
+  });
 })
 //Анимация появления блоков при скролле JS
 function onEntry(entry) {
@@ -113,4 +117,5 @@ if(window.screen.width<769){
     document.querySelectorAll('.works__inner')[i].classList.remove('element-animation')
   }
 }
+
 
